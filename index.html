@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            main: '#FE614E',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+
+    <navbar class="flex justify-between md:justify-end">
+        <div class="hidden md:flex m-3">
+        <h1 onclick="window.location.href='/'" class="cursor-pointer0 z-10 hover:underline decoration-2 underline-offset-4 decoration-main mx-3 ml-24 text-black font-semibold text-sm">Home</h1>
+        <h1 onclick="window.location.href='/projects'" class="cursor-pointer hover:underline decoration-2 underline-offset-4 decoration-main z-10 mx-3 text-black font-semibold text-sm">Projects</h1>
+        <h1 onclick="window.location.href='/internships'" class="cursor-pointer hover:underline decoration-2 underline-offset-4 decoration-main z-10 mx-3 text-black font-semibold text-sm">Internships</h1>
+        <h1 onclick="window.location.href='/documents'" class="cursor-pointer hover:underline decoration-2 underline-offset-4 decoration-main z-10 mx-3 text-black font-semibold text-sm">Documents</h1>
+        </div>
+        <button class="z-10 ml-5 md:hidden"><img src="assets/nav.png" class="nav-btn m-2 active:animate-spin w-8"/></button>
+        <div class="nav hidden md:hidden fixed top-12 rounded-lg shadow-main shadow-2xl  bg-main p-5 m-1">
+            <h1 onclick="window.location.href='/'" class="mx-3 text-gray-100 font-semibold p-2 text-xl hover:scale-110 ">Home</h1>
+            <hr/>
+            <h1 onclick="window.location.href='/projects'" class="mx-3 text-gray-100 p-2 font-semibold text-xl">Projects</h1>
+            <hr/>
+            <h1 onclick="window.location.href='/internships'" class="mx-3 text-gray-100 p-2 font-semibold text-xl">Internships</h1>
+            <hr/>
+            <h1 onclick="window.location.href='/documents'" class="mx-3 text-gray-100 p-2 font-semibold text-xl">Documents</h1>    
+            <hr/>
+        
+        </div>
+        <button class="contact px-3 m-3 mr-5 text-black md:text-white bg-white md:bg-main font-bold font-bold animate-bounce rounded-2xl z-10 p-2">Contact Me</button>
+
+    </navbar>
+
+<script>
+
+    $('.nav-btn').click(function(){
+        if($(this).attr('src') == 'assets/nav.png'){
+            $(this).attr('src','assets/close.png')
+        }
+        else{
+            $(this).attr('src','assets/nav.png')
+        }
+        $('.nav').slideToggle(60)
+    })
+
+</script>
+
+<section class="ml-0 md:ml-0 md:mr-5 border-04 mt-[-19%] md:mt-10 border-sky-300">
+    <div class="grid md:grid-cols-2">
+
+        <!-- img -->
+    <!-- <center> -->
+        <img src="assets/myimg.png" class="top-0 md:mt-[-15%] left-0 w-[100%]"/>
+    <!-- </center> -->
+    
+
+        <!-- info -->
+      <div class="ml-4 mr-4 md:ml-7">
+          <h1 class="text-main text-2xl md:text-7xl"> Madhu </h1>
+        <h1 class="text-2xl md:text-7xl text-main md:mt-3 font-thin">Python Developer</h1>
+        <p class="mt-4 text-sm text-center">Analytical, motivated and hard-working Python Developer with over five years of experience designing, debugging and troubleshooting applications using Flask and Python coding languages.</p>
+        <center>
+            <button class="hire bg-main m-3 mt-6 mr-5 text-white font-bold animate-pulse rounded-2xl p-2 px-3">Hire Me</button>
+        </center>
+
+        <!-- skills -->
+        <h1 class="text-2xl font-bold m-2">Skills</h1>
+
+        <div class="grid grid-cols-3 md:grid-cols-6">
+            <h1 class="text-white m-1 md:m-3 text-center shadow-black shadow-2xl p-2 font-bold bg-black rounded-md">Python</h1>
+            <h1 class="text-white m-1 md:m-3 text-center shadow-black shadow-2xl p-2 font-bold bg-black rounded-md">Pandas</h1>
+            <h1 class="text-white m-1 md:m-3 text-center shadow-black shadow-2xl p-2 font-bold bg-black rounded-md">Numpy</h1>
+            <h1 class="text-white m-1 md:m-3 text-center shadow-black shadow-2xl p-2 font-bold bg-black rounded-md">RegEx</h1>
+            <h1 class="text-white m-1 md:m-3 text-center shadow-black shadow-2xl p-2 font-bold bg-black rounded-md">Django</h1>
+            <h1 class="text-white m-1 md:m-3 text-center shadow-black shadow-2xl p-2 font-bold bg-black rounded-md">Django ORM</h1>
+            
+            
+        </div>
+        <div class="extra grid grid-cols-3 md:grid-cols-5">
+            <h1 class="text-white m-1 md:m-3 text-center shadow-black shadow-2xl p-2 font-bold bg-black rounded-md">Django Rest Api</h1>
+            <h1 class="text-white m-1 md:m-3 text-center shadow-black shadow-2xl p-2 font-bold bg-black rounded-md">MySql</h1>
+            <h1 class="text-white m-1 md:m-3 text-center shadow-black shadow-2xl p-2 font-bold bg-black rounded-md">MongoDB</h1>
+            <h1 class="text-white m-1 md:m-3 text-center shadow-black shadow-2xl p-2 font-bold bg-black rounded-md">Postgresql</h1>
+            <h1 class="text-white m-1 md:m-3 text-center shadow-black shadow-2xl p-2 font-bold bg-black rounded-md">Linux -Scripts</h1>
+            <h1 class="text-white m-1 md:m-3 text-center shadow-black shadow-2xl p-2 font-bold bg-black rounded-md">Web Scraping</h1>
+            <h1 class="text-white m-1 md:m-3 text-center shadow-black shadow-2xl p-2 font-bold bg-black rounded-md">Machine Learning</h1>
+            <h1 class="text-white m-1 md:m-3 text-center shadow-black shadow-2xl p-2 font-bold bg-black rounded-md">Html-Css-Javascript</h1>
+            <h1 class="text-white m-1 md:m-3 text-center shadow-black shadow-2xl p-2 font-bold bg-black rounded-md">React Js</h1>
+            <h1 class="text-white m-1 md:m-3 text-center shadow-black shadow-2xl p-2 font-bold bg-black rounded-md">Tailwind Css</h1>
+            <h1 class="text-white m-1 md:m-3 text-center shadow-black shadow-2xl p-2 font-bold bg-black rounded-md">GIT</h1>    
+        </div>
+        <span class="extra-btn cursor-pointer float-right mt-1 m-5 font-bold text-main">show all..</span><br>
+        <br><h1 class="text-3xl font-bold float-right m-2">Latest Projects</h1>
+    </div>
+    
+    
+    
+    </div>
+
+<script>
+        $('.extra').hide()
+
+    $('.extra-btn').click(function(){
+        $(this).hide()
+        $('.extra').show(400)
+    })
+
+
+</script>
+</section>
+
+<!-- latest projects -->
+
+<section class="mt-5">
+    
+    <div class="md:mx-20 grid md:grid-cols-3 md:gap-2">
+
+        <div class="m-2 md:mx-10">
+            <img src="assets/travel.png" class="border-4 border-gray-400 rounded-3xl shadow-2xl shadow-black md:m-2"/>            
+            <div class="text-7xl mt-[-10%] ml-[50%] translate-x-[-50%] md:translate-x-[12%] md:mt-[-13%] relative md:ml-80 shadow-2xl shadow-black z-1 bg-black text-white text-center w-20 rounded-2xl">01</div>
+            <h1 onclick="window.location.href='https://travelemates.netlify.app/'" class="cursor-pointer text-xl text-main text-center font-bold m-2">TravelMates</h1>
+        </div>
+        
+        <div class="m-2 md:mx-10">
+            <img src="assets/pluto.png" class="border-4 border-gray-400 rounded-3xl shadow-2xl shadow-black md:m-2"/>            
+            <div class="text-7xl mt-[-10%] ml-[50%] translate-x-[-50%] md:translate-x-[12%] md:mt-[-13%] relative md:ml-80 shadow-2xl shadow-black z-1 bg-black text-white text-center w-20 rounded-2xl">02</div>
+            <h1 onclick="window.location.href='https://PlutoKnows.netlify.app/'" class="cursor-pointer text-xl text-center text-main font-bold m-2">PlutoKnows</h1>
+        </div>
+        
+        <div class="m-2 md:mx-10">
+            <img src="assets/dev.png" class="border-4 border-gray-400 rounded-3xl shadow-2xl shadow-black md:m-2"/>            
+            <div class="text-7xl mt-[-10%] ml-[50%] translate-x-[-50%] md:translate-x-[12%] md:mt-[-13%] relative md:ml-80 shadow-2xl shadow-black z-1 bg-black text-white text-center w-20 rounded-2xl">03</div>
+            <h1 onclick="window.location.href='https://devsshop.netlify.app/'" class="cursor-pointer text-xl text-center text-main font-bold m-2">Devsshop</h1>
+        </div>
+        
+    </div>
+    
+    <span class="cursor-pointer float-right text-lg mt-1 m-5 md:mr-10 font-bold text-black">Goto Projects..</span><br>
+</section>
+
+
+
+<div class="info shadow-2xl shadow-black bg-main rounded-3xl p-5 fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+
+    <!-- <h1 class="text-xl font-bold text-center float-right m-2">Contact Me</h1> -->
+    <div>
+        <h1 class="flex font-bold m-3 text-white font-bold text-md justify-center items-center"><img src="https://e7.pngegg.com/pngimages/64/666/png-clipart-phone-logo-whatsapp-computer-icons-blackberry-10-mobile-phones-instant-messaging-icon-whatsapp-grass-symbol.png" class="mr-2" width="40px">+91 9948377187</h1>
+        <h1 class="flex font-bold m-3 text-white text-md justify-center items-center"><img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" class="mr-2" width="40px">bagammagarimadhu@gmail.com</h1>
+        <a href="https://github.com/MadhuSuniL" target="_blank" class="flex m-3 font-bold text-white text-md justify-center items-center"><img src="https://w7.pngwing.com/pngs/914/758/png-transparent-github-social-media-computer-icons-logo-android-github-logo-computer-wallpaper-banner-thumbnail.png" class="mr-2" width="40px">Github Profile</a>
+        <a href="https://www.linkedin.com/in/madhu-sunil-833a84239" class="flex m-3 mt-0  font-bold text-white text-md justify-center items-center"><img src="https://static.vecteezy.com/system/resources/previews/018/930/587/non_2x/linkedin-logo-linkedin-icon-transparent-free-png.png" class="mr-2" width="40px">Linkdin Profile</a>
+    </div>
+
+    <center>
+        <button class="ml-5"><img src="assets/close.png" class="btn m-2 active:animate-spin w-5"/></button>
+    </center>
+</div>
+
+
+<script>
+
+    $('.info').hide()
+    $('.contact').click(function(){
+        $('.info').show(500)
+    })
+    $('.hire').click(function(){
+        $('.info').show(500)
+    })
+
+    $('.btn').click(function(){
+        $('.info').hide(1000)
+    })
+</script>
+
+
+</body>
+</html>
